@@ -1,5 +1,5 @@
 def search_value(key, list):
-    for i in list:
+    for i in list: #Roda a lista do começo ao fim
         if float(key) == float(i):
             return True
 
@@ -7,7 +7,7 @@ def show(list):
     for i in list:
         print(i)
     if len(list) == 0:
-        print("A lista se encontra vazia")
+        print("A lista se encontra vazia") #Algum conteúdo visual para o usuário caso a lista esteja vazia
     return None
 
 def insert_value(list):
@@ -17,7 +17,7 @@ def insert_value(list):
             break
         else:
             try:
-                newValue = float(value)
+                newValue = float(value) #Teste se é um float
             except:
                 print("O comando digitado não é um número")
             if search_value(newValue, list):
