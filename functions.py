@@ -6,3 +6,7 @@ def search_value(key, list):
             break
         i = i+1
     return False
+
+def show(list):
+    for i in list:
+        print(i)
