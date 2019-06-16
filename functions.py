@@ -6,6 +6,8 @@ def search_value(key, list):
 def show(list):
     for i in list:
         print(i)
+    if len(list) == 0:
+        print("A lista se encontra vazia")
     return None
 
 def insert_value(list):
