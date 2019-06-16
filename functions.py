@@ -1,11 +1,7 @@
 def search_value(key, list):
-    i = 0
-    while key >= list[i]:
-        if key == list[i]:
+    for i in list:
+        if float(key) == float(i):
             return True
-            break
-        i = i+1
-    return False
 
 def show(list):
     for i in list:
